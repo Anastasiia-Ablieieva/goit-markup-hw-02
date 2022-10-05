@@ -97,6 +97,8 @@ ul {
 }
 
 .hero-button {
+  cursor: pointer;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -125,11 +127,16 @@ ul {
 
 /* Features */
 
-.hidden {
+.visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+  white-space: nowrap;
   width: 1px;
   height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
   margin: -1px;
 }
 
@@ -161,6 +168,7 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em
   color: var(--title-text-color);
   background: var(--primery-bacground-color);
   border-radius: 4px;
@@ -185,6 +193,7 @@ ul {
 }
 
 .team .team-text {
+  font-weight: 400;
   color: var(--primary-text-color);
 }
 
@@ -208,7 +217,8 @@ ul {
 .filters .filter-button:hover,
 .filters .filter-button:focus {
   cursor: pointer;
-  color: var(--button-bacground-color);
+  background-color: var(--button-bacground-color);
+  color: var(--button-text-hover-color);
 }
 
 /* Footer */
